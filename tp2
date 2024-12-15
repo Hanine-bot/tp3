@@ -1,19 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
 char* ChargerChaine {
     char* chaine = (char*)malloc(N * sizeof(char));
     if (chaine == NULL) {
-        printf("erreeur");
-        free;
+        printf("erreur");
+       return NULL;
     }
     printf("donner la chaine");
     scanf("%s", chaine);
     return chaine;
 }
 int Longueur(char* ch) {
-    return strlen(ch);
+    int longeur=0;
+while(ch[longeur]!='/0')
+longeur++
+return longeur;
 }
 void ChargerTab(char* p, char Tab[]) {
     int i = 0;
@@ -24,9 +25,9 @@ void ChargerTab(char* p, char Tab[]) {
     Tab[i] = '\0'; 
 }
 void InverserTab(char Tab[], char T[], j) {
-    for ( i = 0; i < n; i++) {
-        for(j=i-1;j>=0,j--)
-        T[i] = Tab[j];
+    for ( i = n; i = 0; i--) {
+        for(j=0;j<n,j++)
+        T[j] = Tab[i];
     }
     T[n] = '\0'; 
 }
